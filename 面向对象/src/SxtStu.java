@@ -10,7 +10,7 @@ public class SxtStu {
         System.out.println("我在学习用" + com.brand + "电脑");
     }
     SxtStu(){
-        
+
     }
 
     public static void main(String[] args) {
