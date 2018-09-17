@@ -25,10 +25,11 @@ class FeiJi implements CanFly, Attack{
     }
 }
 
-class Man implements CanFly{
+class Man implements CanFly {
 
     @Override
     public void fly() {
         System.out.println("人也可以飞");
     }
 }
+
