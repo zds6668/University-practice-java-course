@@ -4,10 +4,10 @@
 
 ### 学习安排
 
-1. 面向对象，多态，string类，数组，常用类
+1. ~~面向对象，多态，string类，数组，常用类~~
 2. 容器和数据结构
-   - List，Arraylist，LinkedList，Vector
-   - Map，HashMap，HashTable，看源码
+   - ~~List，Arraylist，LinkedList，~~Vector
+   - ~~Map，HashMap~~，HashTable，看源码
    - HashSet，泛型
 3. 多线程
 4. JVM
