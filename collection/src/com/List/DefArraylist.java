@@ -1,12 +1,12 @@
 package com.List;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 
 public class DefArraylist {
     Object[] elementData;
     private int size;
-
-
     public DefArraylist(){
         this(10);
     }

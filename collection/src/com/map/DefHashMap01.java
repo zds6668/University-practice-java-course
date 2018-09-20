@@ -1,7 +1,6 @@
 package com.map;
 
 
-import com.sun.glass.ui.Size;
 
 public class DefHashMap01 {
     private int size;
