@@ -4,10 +4,10 @@
 
 ### 学习安排
 
-1. 面向对象，多态，string类，数组，常用类
+1. ~~面向对象，多态，string类，数组，常用类~~
 2. 容器和数据结构
-   - List，Arraylist，LinkedList，Vector
-   - Map，HashMap，HashTable，看源码
+   - ~~List，Arraylist，LinkedList~~，Vector
+   - ~~Map，HashMap~~，HashTable，看源码
    - HashSet，泛型
 3. 多线程
 4. JVM
@@ -56,7 +56,8 @@
      - 而在1.8中，因为扩容后原链表上的Node可能会分成两部分，通过用了两条新链表：一条loHead下标为index，一条hiHead下标为index+Oldcap，通过遍历所有的原链表中的节点，同样a->b->c->null，这里假设b的index和ac不同，那么首先a，通过1.8的巧运算（遗弃了rehash，后面说）变成loHead->a->null,取b后变成hiHead->b->null，取c后变成loHead->a->c->null，这时遍历完成，会将两条新链表接到新数组对应的index上，然后把新put的Node通过头插插到链表头，可以分析，1.8中就算put用的还是头插法，resize后链表仍然不发生反转。源码看关键部分40行到69行
 
        ```java
-       	final Node<K,V>[] resize() {
+       	//JDK1.8
+       final Node<K,V>[] resize() {
                Node<K,V>[] oldTab = table;
                int oldCap = (oldTab == null) ? 0 : oldTab.length;
                int oldThr = threshold;
@@ -171,4 +172,3 @@
      - 还有的说1.8对一个位的bit取与操作，让原一个链表的节点均匀分为0或1，这是1.8的优化，我说大哥，能不能想一想，1.8的操作和1.7对length-1与操作的结果，有任何改变吗，一模一样的好吗，1.8的运算就是对& length-1的一个转换方式罢了。原来是1.7是a * c+b * c，现在写为(a + b) * c，结果变没变？ 我看来，不过是写JDK的人取了个巧罢了。
 
    - 4）关于1.7中PUT用头插法，因为插入链表的时候已经遍历了一遍链表了，并不是说头插比尾插更效率，只要插入都要摸链，那么既然都摸到链表尾了，还使用头插？这里想想操作系统的某些调度算法，是不是有一种，刚用过的数据极大可能马上再用？【最近最久未使用】。这是时间局部性原理。
-
