@@ -35,25 +35,25 @@ class chose extends Thread{
     private void make(){
         if (choice==0){
             synchronized (l){
-                System.out.println(name + "的哦到了l");
+                System.out.println(name + "哦到了大胸美女");
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 synchronized (m){
-                    System.out.println(name + "得到了m");
+                    System.out.println(name + "得到了大屁股美女");
                 }
             }
         }else{
             synchronized (m){
-                System.out.println(name + "的哦到了m");
+                System.out.println(name + "哦到了大屁股美女");
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }synchronized (l){
-                    System.out.println(name + "得到了l");
+                    System.out.println(name + "得到了大胸美女");
                 }
             }
         }
