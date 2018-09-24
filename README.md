@@ -8,7 +8,7 @@
 2. 容器和数据结构
    - ~~List，Arraylist，LinkedList~~，Vector
    - ~~Map，HashMap~~，HashTable，看源码
-   - HashSet，泛型
+   - HashSet，~~泛型~~
 3. 多线程
 4. JVM
 5. 设计模式
