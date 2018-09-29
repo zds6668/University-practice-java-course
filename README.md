@@ -9,7 +9,7 @@
    - ~~List，Arraylist，LinkedList~~，Vector
    - ~~Map，HashMap~~，HashTable，看源码
    - HashSet，~~泛型~~
-3. 多线程
+3. 多线程（JAVA多线程编程实战指南，date：9-29--10-3预计5天吃透吧）
 4. JVM
 5. 设计模式
 6. 并发
