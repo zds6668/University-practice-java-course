@@ -1,4 +1,4 @@
-package java多线程核心篇.第3章;
+package java多线程核心篇.第3章.单例;
 
 /**
  * 清单3-17
